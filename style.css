@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#splitter {
+  display: flex;
+  justify-content: center;
+  margin: 10vh;
+}
+html,
+body {
+  background-color: hsl(185, 41%, 84%);
+  font: 24px;
+  font-family: "Space Mono", sans-serif;
+}
+
+#bill-container {
+  border-radius: 2vw;
+  padding: 2%;
+  height: 60vh;
+  width: 60vw;
+  /*border: 2px solid black;*/
+  margin-left: 20vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+#left-container {
+  /*border: 2px solid black;*/
+  position: relative;
+  height: 100%;
+  width: 50%;
+  border-radius: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  padding-top: 1%;
+  padding-right: 5%;
+}
+/* harsh's section  */
+#right-container {
+  padding: 2vw;
+  /*border: 2px solid black;*/
+  height: 100%;
+  width: 50%;
+  margin: 2px;
+  border-radius: 1vw;
+  background-color: hsl(183, 100%, 15%);
+  display: flex;
+  padding-left: 5%;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#tip-amount-per-person,
+#total-amount-per-person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 20%;
+}
+#total-amount-per-person {
+  margin-top: -30%;
+}
+.fl {
+  width: 60%;
+  font-size: 12px;
+  color: hsl(185, 41%, 84%);
+}
+.sl {
+  width: 40%;
+  margin-top: -3%;
+  font-size: 35px;
+  /* color:hsl(185, 41%, 84%); */
+  color: hsl(183, 100%, 15%);
+  color: hsl(172, 67%, 45%);
+}
+.fl::first-line {
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+}
+#reset {
+  width: 100%;
+  font-family: "Space Mono", sans-serif;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(168, 65%, 37%);
+  text-align: center;
+  padding: 5%;
+  border: 0;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: all ease-in-out 0.3s;
+}
+#reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+/* harsh's section over  */
+
+#tip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.sub-tip{
+  /*border: 1px solid black;*/
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  text-align: center;
+  padding-top: 5px ;
+  justify-content: space-evenly;
+  border-radius: 0.5rem;
+  line-height: 5vh;
+  width: 100%;
+  height: 120%;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.sub-tip:hover {
+  background-color: #8fe0ba;
+  color: hsl(183, 100%, 15%);
+}
+
+.custom {
+  text-align: center;
+  font-size: 15px;
+  background-color: #ecedef;
+  border: none;
+  border-radius: 5px;
+  height:120%;
+  width: 100%;
+  border: 0px solid hsl(168,65%,37%);
+  transition: all ease-in-out 0.1s;
+}
+
+.custom:hover {
+    border: 3px solid hsl(168, 65%, 37%);
+}
+
+input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-weight: bold;
+}
+
+#no-of-ppl {
+  height: 10vh;
+  width: 100%;
+}
+
+#bill-input {
+  height: 3vh;
+  width: 100%;
+}
+
+.user-text span {
+  padding-top: 5px;
+  /* padding-left: 4px; */
+}
+.user-text img {
+  height: 20px;
+}
+.user-text {
+  margin-top: 5px;
+  height: 7vh;
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* font-size: 1.4rem; */
+  background-color: #ecedef;
+  border-radius: 0.5vw;
+  font-family: "Space Mono", sans-serif;
+  transition: all ease-in-out 0.1s;
+  border: 0px solid hsl(168, 65%, 37%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.user-text:hover {
+    border: 3px solid hsl(168, 65%, 37%);
+}
+.user-input {
+  text-align: right;
+  margin-right: 5px;
+  border: none;
+  height: 100%;
+  width: 95%;
+  background-color: #ecedef;
+  font-size: 1.4rem;
+  color: grey;
+  outline: none;
+}

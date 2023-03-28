@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="splitter">
+        <img src="images/logo.svg" alt="Spiltter Logo" />
+      </div>
+    </header>
+    <form>
+    <div id="bill-container">
+      <div id="left-container">
+        <div id="total-amount">
+          <span style="color: grey;font-size:14px;">Bill</span>
+          <div class="user-text">
+            <span style="color: grey">
+              <img src="./images/icon-dollar.svg">
+            </span>
+            <input placeholder="0" id="bill" class="user-input" type="number" />
+          </div>
+        </div>
+        <div id="select-tip">
+          <p style="color: grey; margin-bottom: 5px;font-size:14px;">Select Tip %</p>
+          <div id="tip">
+            <div class="sub-tip" data-value="5" id="five">5%</div>
+            <div class="sub-tip" data-value="10" id="ten">10%</div>
+            <div class="sub-tip" data-value="15" id="fifteen">15%</div>
+            <div class="sub-tip" data-value="25" id="twentyfive">25%</div>
+            <div class="sub-tip" data-value="50" id="fifty">50%</div>
+            <input
+              class="custom" type="number" name="" id="tip-button" placeholder="Custom" min="0" max="100"
+            >
+          </div>
+        </div>
+        <div id="no-of-ppl">
+          <span style="color: grey;font-size:14px;">Number Of People</span>
+
+          <div class="user-text">
+            <span>
+              <img src="./images/icon-person.svg" />
+            </span>
+            <input placeholder="0" id="people" class="user-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- harshhhhhhhhhhhhhhhhhhhhhhhh -->
+      <div id="right-container">
+        <div id="tip-amount-per-person">
+          <p class="fl">Tip Amount <br />/ person</p>
+          <p id="top-amount" class="sl">$0.00</p>
+        </div>
+        <div id="total-amount-per-person">
+          <p class="fl">Total<br />/ person</p>
+          <p id="bottom-amount" class="sl">$0.00</p>
+        </div>
+        <div class="reset-button">
+          <button id="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+    </form>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+        >. Coded by <a href="#">BroCode</a>.
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
